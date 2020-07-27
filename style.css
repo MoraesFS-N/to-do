@@ -19,17 +19,9 @@ header h1{
 
 header h1 svg{
     display: flex;
+    justify-content: center;
     margin-left: 10px;
-    transition: 800ms;
 }
-
-header h1 svg:hover{
-    transform: rotate(180deg);
-}
-
-
-
-
 
 header h1 span{
     display: 1;
@@ -53,7 +45,12 @@ div.container form input{
     border-radius: 8px 0px 0px 8px;
     border: none;
     background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px 1px rgb(30, 37, 48);
 
+}
+
+div.container form input:focus{
+    outline: 0;
 }
 
 div.container form button{
@@ -62,13 +59,57 @@ div.container form button{
     cursor: pointer;
     border-radius: 0px 8px 8px 0px;
     border: none;
-    background-color: rgb(53, 48, 99);
+    background-color: rgb(29, 22, 90);
     color: white;
     font-weight: bold;
+    box-shadow: 1px 1px 1px 1px rgb(30,37,48);
     transition: 0.8s;
 }
 
 div.container form button:hover{
     background-color: rgb(86, 80, 143);
 
+}
+
+div.container-task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+div.container-task p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    border: 1px solid green;
+}
+
+div.container-task ul{
+    max-width: 600px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+div.container-task ul li{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+div.container-task ul li input{
+    border: 1px solid yellow
 }
